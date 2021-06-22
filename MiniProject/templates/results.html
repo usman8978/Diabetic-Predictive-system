@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
+	<h1>
+		{%if prediction==0%}
+		<div style="background-image:url('static/success.jpg');">
+			<h3 style="position: relative;top: 250px;left: 250px">YOU DONT HAVE DIABETES</h3>
+
+		</div>
+		{%elif prediction==1%}
+		<div>
+				<h3 style="position: relative;top: 250px;left: 250px">YOU HAVE A CHANCE OF GETTING DIABETES.</h3>
+		</div>
+		{%endif%}
+	</h1>
+
+</body>
+</html>
